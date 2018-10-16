@@ -70,7 +70,7 @@ class discordBot:
             self.collection.insert(post,check_keys=False)
             best_reply = ''
             for i in range(self.replies_to_generate):
-                generated = self.generate_reply(seed=key,obj=dobj)
+                generated = self.generate_reply(seed=key)
                 if not generated:
                     return "no generated messages"
                 else:
